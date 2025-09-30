@@ -98,8 +98,26 @@ form .row + .row{margin-top:12px}
 .slider .nav.next{right:10px}
 @media(max-width:860px){.slider img{height:300px}}
 
-.site-header .brand img{height:72px}
+.site-header .brand img{height:96px}
 
 .hero-logo{position:absolute;right:6%;top:18%;opacity:.12}
 .hero-logo img{width:min(48vw,700px);height:auto;display:block}
 @media(max-width:860px){.hero-logo{display:none}}
+
+/* premium hero watermark */
+.hero{
+  position:relative;
+  background:linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+  min-height:520px;
+}
+.hero::after{
+  content:"";
+  position:absolute; inset:0;
+  background-image:url('/assets/logo-user.png');
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:min(70vw, 900px);
+  opacity:.08;           /* watermark transparency */
+  pointer-events:none;
+}
+.hero .cols{position:relative; z-index:1}
