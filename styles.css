@@ -74,3 +74,12 @@ form .row + .row{margin-top:12px}
     pointer-events:none;
   }
 }
+
+/* overlay for hero photo so text stays readable */
+.hero{position:relative}
+.hero::before{
+  content:"";position:absolute;inset:0;
+  background:linear-gradient(90deg, rgba(15,23,42,.65) 0%, rgba(15,23,42,.25) 55%, rgba(15,23,42,0) 100%);
+  pointer-events:none;
+}
+.hero .cols{position:relative; z-index:1}
