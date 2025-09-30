@@ -1,128 +1,84 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Services | Garage Repair • LiftMaster Motors • Springs & Cables • New Doors</title>
-  <meta name="description" content="Comprehensive garage door services: meticulous repairs, LiftMaster opener motors, calibrated springs & cables and premium new door installation.">
-  <link rel="canonical" href="https://example.netlify.app/services.html">
-  <meta property="og:title" content="Services | Garage Repair • LiftMaster Motors • Springs & Cables • New Doors">
-  <meta property="og:description" content="Comprehensive garage door services: meticulous repairs, LiftMaster opener motors, calibrated springs & cables and premium new door installation.">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="hero_dark.jpg">
-  <link rel="stylesheet" href="style.css">
-  <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "name": "KSB Services Garage Door",
-  "image": "logo.jpg",
-  "telephone": "+1-317-374-8677",
-  "email": "Kobi@ksb-locksmith.com",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Indianapolis",
-    "addressRegion": "IN",
-    "addressCountry": "US"
-  },
-  "areaServed": ["Indianapolis","Carmel","Fishers","Noblesville","Zionsville"],
-  "url": "https://example.netlify.app/services.html"
-}
-</script>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Services — KSB Garage Door</title>
+  <link rel="stylesheet" href="./css/styles.css"/>
 </head>
 <body>
-<div class="brand-wallpaper"></div>
-<header>
-  <div class="brand">
-    <img src="logo.jpg" alt="KSB Services Garage Door logo">
-    <div class="title">KSB Services • Garage Door</div>
-  </div>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="services.html">Services</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
+<header class="header">
+  <nav class="nav container">
+    <div class="logo-wrap">
+      <img src="./images/logo.png" alt="KSB Services Logo">
+      <div class="brand">KSB Services — Garage Door</div>
+    </div>
+    <div class="menu">
+      <a href="./index.html">Home</a>
+      <a href="./services.html">Services</a>
+      <a href="./request-service.html" class="btn btn-primary">Request Service</a>
+      <a href="tel:3173748677" class="btn btn-outline">Call Now</a>
+    </div>
   </nav>
 </header>
 
-<section class="container">
-  <h2>Professional Services</h2>
-  <div class="grid">
-    <div class="card">
-      <img src="services_dark.jpg" alt="Garage door repair service">
-      <div class="pad">
-        <h3>Garage Door Repair</h3>
-        <p>We diagnose the root cause, not just the symptom. From misaligned tracks and worn rollers to damaged panels and noisy hinges — every repair is finished with a safety reversal test and balance check.</p>
+<section class="section container">
+  <div class="head"><h2>All Services</h2></div>
+  <div class="cards">
+    <article class="card">
+      <div class="badge"><img src="./images/logo.png" alt="">KSB</div>
+      <img src="./images/services/installation.png" alt="Garage Door Installation">
+      <div class="body">
+        <h3>Garage Door Installation</h3>
+        <p>New residential installations, removal of old doors, premium hardware and weather seals.</p>
       </div>
-    </div>
-    <div class="card">
-      <img src="services_dark.jpg" alt="LiftMaster opener motors">
-      <div class="pad">
-        <h3>LiftMaster Motors & Smart Openers</h3>
-        <p>Quiet belt‑drive openers with Wi‑Fi (myQ), battery backup and modern safety sensors. Keypads and remote programming included, with force and travel limits calibrated correctly.</p>
+    </article>
+    <article class="card">
+      <div class="badge"><img src="./images/logo.png" alt="">KSB</div>
+      <img src="./images/services/springs.png" alt="Spring Replacement">
+      <div class="body">
+        <h3>Spring Replacement</h3>
+        <p>Precision‑balanced torsion/extension springs to restore safe, smooth operation.</p>
       </div>
-    </div>
-    <div class="card">
-      <img src="services_dark.jpg" alt="Torsion spring replacement">
-      <div class="pad">
-        <h3>Springs & Cables</h3>
-        <p>Precision torsion/extension spring sizing and installation. We wind to spec, set correct balance and replace frayed cables to protect your opener and reduce noise.</p>
+    </article>
+    <article class="card">
+      <div class="badge"><img src="./images/logo.png" alt="">KSB</div>
+      <img src="./images/services/cables.png" alt="Cable Adjustment">
+      <div class="body">
+        <h3>Cable Adjustment</h3>
+        <p>Alignment and tension corrections to prevent uneven movement and track issues.</p>
       </div>
-    </div>
-    <div class="card">
-      <img src="services_dark.jpg" alt="New insulated garage door installation">
-      <div class="pad">
-        <h3>New Door Installation</h3>
-        <p>Insulated steel, carriage‑house and modern flush designs. We remove the old door, install premium hardware, balance the system and complete a full quality inspection.</p>
+    </article>
+    <article class="card">
+      <div class="badge"><img src="./images/logo.png" alt="">KSB</div>
+      <img src="./images/services/motor.png" alt="Opener / Motor Installation">
+      <div class="body">
+        <h3>Opener / Motor Installation</h3>
+        <p>Smart, quiet openers installed and configured with remotes, keypads and mobile apps.</p>
       </div>
-    </div>
+    </article>
+    <article class="card">
+      <div class="badge"><img src="./images/logo.png" alt="">KSB</div>
+      <img src="./images/services/emergency.png" alt="24/7 Emergency Service">
+      <div class="body">
+        <h3>24/7 Emergency Service</h3>
+        <p>Rapid response for stuck doors, broken springs, off‑track scenarios and lockouts.</p>
+      </div>
+    </article>
   </div>
 </section>
-<section class="container">
-  <h2>Emergency • Commercial • Custom Doors</h2>
-  <div class="grid">
-    <div class="card">
-      <img src="emergency_dark.jpg" alt="24/7 emergency garage door repair">
-      <div class="pad">
-        <h3>Emergency Service (24/7)</h3>
-        <p>Stuck door, broken springs or cables, opener won’t move? We offer <strong>24/7 emergency garage door repair</strong> across Indianapolis, Carmel, Fishers, Zionsville and Noblesville. Fast response, safe fixes and clear communication.</p>
-      </div>
+<footer class="footer">
+  <div class="inner container">
+    <div>
+      <img src="./images/logo.png" alt="KSB Logo">
     </div>
-    <div class="card">
-      <img src="commercial_dark.jpg" alt="Commercial overhead and roll-up doors">
-      <div class="pad">
-        <h3>Commercial Services</h3>
-        <p>Installation and repair for <strong>commercial overhead doors</strong>, <strong>roll‑up steel doors</strong>, loading docks, warehouse openings and high‑cycle springs. Preventive maintenance programs available.</p>
-      </div>
-    </div>
-    <div class="card">
-      <img src="custom_dark.jpg" alt="Custom garage doors">
-      <div class="pad">
-        <h3>Custom Garage Doors</h3>
-        <p>Designer carriage‑house, glass, wood‑look and modern flush. We perform precise on‑site measurements, consult on insulation and hardware, and deliver a classic, professional installation.</p>
-      </div>
+    <div>
+      <strong>Indianapolis & Area</strong><br/>
+      Phone: <a href="tel:3173748677">317-374-8677</a><br/>
+      Email: <a href="mailto:Kobi@ksb-locksmith.com">Kobi@ksb-locksmith.com</a>
     </div>
   </div>
-</section>
-
-<footer>
-  <div class="logos">
-    <img src="logo.jpg" alt="KSB Services logo">
-    <img src="logo.jpg" alt="KSB Services logo">
-  </div>
-  <div>© 2025 KSB Services Garage Door</div>
+</footer>
 
 </body>
 </html>
-
-<section class="container">
-  <h2>Trusted by Homeowners & Businesses</h2>
-  <p class="highlight">Meticulous repairs • LiftMaster expertise • Calibrated springs & cables • Premium new door installs</p>
-</section>
-<footer>
-  <div class="logos">
-    <img src="logo.jpg" alt="KSB Services logo">
-    <img src="logo.jpg" alt="KSB Services logo">
-  </div>
-  <div>© 2025 KSB Services Garage Door</div>
-</footer>

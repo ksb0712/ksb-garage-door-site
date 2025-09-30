@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Request Service — KSB Garage Door</title>
+  <link rel="stylesheet" href="./css/styles.css"/>
+</head>
+<body>
+<header class="header">
+  <nav class="nav container">
+    <div class="logo-wrap">
+      <img src="./images/logo.png" alt="KSB Services Logo">
+      <div class="brand">KSB Services — Garage Door</div>
+    </div>
+    <div class="menu">
+      <a href="./index.html">Home</a>
+      <a href="./services.html">Services</a>
+      <a href="./request-service.html" class="btn btn-primary">Request Service</a>
+      <a href="tel:3173748677" class="btn btn-outline">Call Now</a>
+    </div>
+  </nav>
+</header>
+
+<section class="section container">
+  <div class="head"><h2>Request Service</h2></div>
+  <form class="form" name="service-request" method="POST" data-netlify="true" action="/thank-you.html">
+    <input type="hidden" name="form-name" value="service-request">
+    <div class="row">
+      <div>
+        <label>Full Name</label>
+        <input type="text" name="name" required placeholder="Your name">
+      </div>
+      <div>
+        <label>Phone Number</label>
+        <input type="tel" name="phone" required placeholder="Best number to reach you">
+      </div>
+    </div>
+    <div class="row">
+      <div>
+        <label>City</label>
+        <input type="text" name="city" placeholder="e.g., Carmel / Fishers / Zionsville">
+      </div>
+      <div>
+        <label>Service Type</label>
+        <select name="service">
+          <option value="installation">Garage Door Installation</option>
+          <option value="spring">Spring Replacement</option>
+          <option value="cable">Cable Adjustment</option>
+          <option value="motor">Opener / Motor</option>
+          <option value="emergency">Emergency 24/7</option>
+        </select>
+      </div>
+    </div>
+    <div>
+      <label>Describe the issue</label>
+      <textarea name="message" rows="5" placeholder="Tell us what's going on..."></textarea>
+    </div>
+    <button class="btn btn-primary" type="submit">Submit Request</button>
+    <p class="notice">Prefer to talk? Call us now: <a href="tel:3173748677">317‑374‑8677</a></p>
+  </form>
+</section>
+<footer class="footer">
+  <div class="inner container">
+    <div>
+      <img src="./images/logo.png" alt="KSB Logo">
+    </div>
+    <div>
+      <strong>Indianapolis & Area</strong><br/>
+      Phone: <a href="tel:3173748677">317-374-8677</a><br/>
+      Email: <a href="mailto:Kobi@ksb-locksmith.com">Kobi@ksb-locksmith.com</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
