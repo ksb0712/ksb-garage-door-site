@@ -97,3 +97,9 @@ form .row + .row{margin-top:12px}
 .slider .nav.prev{left:10px}
 .slider .nav.next{right:10px}
 @media(max-width:860px){.slider img{height:300px}}
+
+.site-header .brand img{height:72px}
+
+.hero-logo{position:absolute;right:6%;top:18%;opacity:.12}
+.hero-logo img{width:min(48vw,700px);height:auto;display:block}
+@media(max-width:860px){.hero-logo{display:none}}
