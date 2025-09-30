@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-labelledby="title desc">
+<title id="title">KSB‑SERVICES garage door — logo</title>
+<desc id="desc">Wordmark KSB‑SERVICES with an orange key icon replacing the letter I</desc>
+<style>
+  .bg {{ fill: none; }}
+  .brand {{ font: 900 140px system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Arial, sans-serif; letter-spacing: 2px; }}
+  .sub {{ font: 600 44px system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Arial, sans-serif; letter-spacing: 6px; }}
+</style>
+<rect class="bg" width="1200" height="300"/>
+<!-- KSB‑SERV -->
+<text x="20" y="170" class="brand" fill="#0b0b0c">KSB‑SERV</text>
+<!-- Key icon as "I" -->
+<g transform="translate(740,35)">
+  <rect x="50" y="2" width="30" height="160" rx="8" fill="#ff7a00"/>
+  <circle cx="65" cy="200" r="38" fill="#ff7a00"/>
+  <circle cx="65" cy="200" r="16" fill="#ffffff"/>
+  <rect x="44" y="220" width="42" height="18" rx="4" fill="#ff7a00"/>
+  <rect x="44" y="244" width="28" height="16" rx="3" fill="#ff7a00"/>
+</g>
+<!-- CES -->
+<text x="820" y="170" class="brand" fill="#0b0b0c">CES</text>
+<text x="22" y="238" class="sub" fill="#4b5563">GARAGE&nbsp;DOOR</text>
+</svg>
