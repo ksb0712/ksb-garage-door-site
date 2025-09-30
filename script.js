@@ -17,3 +17,14 @@
   const ul = document.querySelector("#areas-list");
   if(ul && c.areas){ ul.innerHTML = c.areas.map(x=>`<li>${x}</li>`).join(""); }
 })();
+// simple slider controls
+document.querySelectorAll('[data-slider]').forEach(slider=>{
+  const track = slider.querySelector('.track');
+  const slides = slider.querySelectorAll('.slide');
+  let i = 0;
+  function update(){ track.style.transform = `translateX(-${i*100}%)`; }
+  slider.querySelector('.next').addEventListener('click', ()=>{ i=(i+1)%slides.length; update(); });
+  slider.querySelector('.prev').addEventListener('click', ()=>{ i=(i-1+slides.length)%slides.length; update(); });
+  // auto-play
+  setInterval(()=>{ i=(i+1)%slides.length; update(); }, 5000);
+});

@@ -83,3 +83,17 @@ form .row + .row{margin-top:12px}
   pointer-events:none;
 }
 .hero .cols{position:relative; z-index:1}
+
+/* hero overlay to keep text readable over photo */
+.hero{position:relative}
+.hero::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg, rgba(15,23,42,.65) 0%, rgba(15,23,42,.25) 55%, rgba(15,23,42,0) 100%);pointer-events:none}
+.hero .cols{position:relative;z-index:1}
+/* simple slider */
+.slider{position:relative;overflow:hidden;border:1px solid var(--ring);border-radius:16px}
+.slider .track{display:flex;transition:transform .4s ease}
+.slider .slide{min-width:100%}
+.slider img{display:block;width:100%;height:460px;object-fit:cover}
+.slider .nav{position:absolute;top:50%;transform:translateY(-50%);background:rgba(15,23,42,.55);color:#fff;border:0;border-radius:999px;width:42px;height:42px;font-size:24px;font-weight:900;cursor:pointer}
+.slider .nav.prev{left:10px}
+.slider .nav.next{right:10px}
+@media(max-width:860px){.slider img{height:300px}}
